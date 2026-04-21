@@ -1,33 +1,34 @@
 # WoodStack - Marketing & Development Portfolio 🚀
 
-**WoodStack** es una plataforma de marca personal y agencia que precede al desarrollo de ecosistemas complejos como *Biye*. Este proyecto fue concebido como un portfolio de alto impacto para demostrar la sinergia entre el marketing digital estratégico y el desarrollo de software moderno.
+**WoodStack** es la identidad de marca y portfolio estratégico que precede al desarrollo de ecosistemas complejos como *Biye*. Este proyecto fue diseñado para demostrar la sinergia entre el marketing digital de alto impacto y el desarrollo web moderno.
 
 ![Vercel Deployment](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 ## 🌐 Live Demo
 Puedes ver el sitio en vivo aquí: [woodstack-portfolio.vercel.app](https://woodstack-portfolio.vercel.app/)
 
-## 🎯 Objetivo del Proyecto
-El propósito de WoodStack fue crear una identidad visual sólida para captar clientes que buscaran no solo una página web, sino una solución integral de marketing. Sirvió como base experimental para probar flujos de usuario (UX) y optimización de conversión (CRO) antes de escalar a proyectos de e-commerce.
+## 🎯 El Concepto
+WoodStack no es solo un portfolio; es una declaración de principios. El objetivo fue crear una plataforma que comunique solidez y profesionalismo, enfocada en captar clientes que busquen soluciones integrales de branding y software.
 
-## 🛠️ Tecnologías Utilizadas
-- **Frontend:** [React.js / Next.js / HTML5 / CSS3] *(Ajustar según corresponda)*
-- **Styling:** CSS Modules / Tailwind CSS.
-- **Deployment:** Vercel (CI/CD).
-- **Diseño:** Enfoque en accesibilidad y responsividad (Mobile First).
+## 🛠️ Stack Tecnológico
+Este proyecto utiliza tecnologías de última generación para garantizar velocidad y SEO:
+- **Core:** React con **Vite** para una experiencia de desarrollo ultrarrápida (HMR).
+- **Compilación:** Optimizado mediante el plugin de React con soporte para Fast Refresh.
+- **Deployment:** Alojado en **Vercel** con integración continua.
+- **Styling:** Enfoque en diseño responsivo y estética minimalista.
 
-## 🚀 Características Principales
-- **Diseño Minimalista:** Foco en la legibilidad y la identidad de marca.
-- **Optimización de Performance:** Tiempos de carga mínimos para mejorar el SEO.
-- **Secciones Estratégicas:** Presentación de servicios, filosofía de trabajo y puntos de contacto directos.
-- **Arquitectura de Componentes:** Código modular y reutilizable.
+## 🚀 Características Técnicas
+- **Estructura Modular:** Organización de componentes pensada para la escalabilidad.
+- **Alto Rendimiento:** Tiempos de carga optimizados mediante la configuración eficiente de Vite.
+- **Enfoque SEO:** Etiquetas y estructura semántica orientada al marketing digital.
 
-## 📁 Estructura del Repositorio
+## 📂 Estructura del Repositorio
 ```text
-├── public/          # Assets estáticos (Imágenes, logos)
+├── public/          # Assets estáticos y logos
 ├── src/
-│   ├── components/  # Componentes reutilizables
-│   ├── styles/      # Archivos de estilo global
-│   └── pages/       # Vistas principales del sitio
-└── package.json     # Dependencias y scripts
+│   ├── components/  # Bloques de construcción de la UI
+│   ├── assets/      # Recursos visuales
+│   └── App.jsx      # Lógica principal y ruteo
+└── package.json     # Scripts y dependencias

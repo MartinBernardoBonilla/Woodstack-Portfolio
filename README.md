@@ -1,16 +1,33 @@
-# React + Vite
+# WoodStack - Marketing & Development Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**WoodStack** es una plataforma de marca personal y agencia que precede al desarrollo de ecosistemas complejos como *Biye*. Este proyecto fue concebido como un portfolio de alto impacto para demostrar la sinergia entre el marketing digital estratégico y el desarrollo de software moderno.
 
-Currently, two official plugins are available:
+![Vercel Deployment](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+Puedes ver el sitio en vivo aquí: [woodstack-portfolio.vercel.app](https://woodstack-portfolio.vercel.app/)
 
-## React Compiler
+## 🎯 Objetivo del Proyecto
+El propósito de WoodStack fue crear una identidad visual sólida para captar clientes que buscaran no solo una página web, sino una solución integral de marketing. Sirvió como base experimental para probar flujos de usuario (UX) y optimización de conversión (CRO) antes de escalar a proyectos de e-commerce.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologías Utilizadas
+- **Frontend:** [React.js / Next.js / HTML5 / CSS3] *(Ajustar según corresponda)*
+- **Styling:** CSS Modules / Tailwind CSS.
+- **Deployment:** Vercel (CI/CD).
+- **Diseño:** Enfoque en accesibilidad y responsividad (Mobile First).
 
-## Expanding the ESLint configuration
+## 🚀 Características Principales
+- **Diseño Minimalista:** Foco en la legibilidad y la identidad de marca.
+- **Optimización de Performance:** Tiempos de carga mínimos para mejorar el SEO.
+- **Secciones Estratégicas:** Presentación de servicios, filosofía de trabajo y puntos de contacto directos.
+- **Arquitectura de Componentes:** Código modular y reutilizable.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Estructura del Repositorio
+```text
+├── public/          # Assets estáticos (Imágenes, logos)
+├── src/
+│   ├── components/  # Componentes reutilizables
+│   ├── styles/      # Archivos de estilo global
+│   └── pages/       # Vistas principales del sitio
+└── package.json     # Dependencias y scripts

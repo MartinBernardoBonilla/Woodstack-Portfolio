@@ -74,8 +74,6 @@ git clone https://github.com/MartinBernardoBonilla/woodstack-portfolio
 cd woodstack-portfolio
 npm install
 npm run dev  # Abre http://localhost:5173
-👤 Autor
-Martín Bernardo Bonilla — Fullstack Developer
 
 https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white
 https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white

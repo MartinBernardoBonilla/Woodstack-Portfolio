@@ -1,34 +1,25 @@
-# WoodStack - Marketing & Development Portfolio 🚀
+# WoodStack - Marketing & Development Portfolio 🪵
 
-**WoodStack** es la identidad de marca y portfolio estratégico que precede al desarrollo de ecosistemas complejos como *Biye*. Este proyecto fue diseñado para demostrar la sinergia entre el marketing digital de alto impacto y el desarrollo web moderno.
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://woodstack-portfolio.vercel.app)
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
 
-![Vercel Deployment](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+## 🎯 ¿Por qué existe WoodStack?
 
-## 🌐 Live Demo
-Puedes ver el sitio en vivo aquí: [woodstack-portfolio.vercel.app](https://woodstack-portfolio.vercel.app/)
+WoodStack nace como **la vitrina estratégica** que demuestra mi capacidad para unir:
+- **Branding y marketing digital** (copy, diseño, conversión)
+- **Desarrollo web moderno** (rendimiento, SEO, arquitectura)
 
-## 🎯 El Concepto
-WoodStack no es solo un portfolio; es una declaración de principios. El objetivo fue crear una plataforma que comunique solidez y profesionalismo, enfocada en captar clientes que busquen soluciones integrales de branding y software.
+Este portfolio no es solo "mi página personal" — es un caso de estudio en sí mismo sobre cómo comunicar solidez técnica y profesionalismo.
 
-## 🛠️ Stack Tecnológico
-Este proyecto utiliza tecnologías de última generación para garantizar velocidad y SEO:
-- **Core:** React con **Vite** para una experiencia de desarrollo ultrarrápida (HMR).
-- **Compilación:** Optimizado mediante el plugin de React con soporte para Fast Refresh.
-- **Deployment:** Alojado en **Vercel** con integración continua.
-- **Styling:** Enfoque en diseño responsivo y estética minimalista.
+## 🛠️ Stack Técnico Detallado
 
-## 🚀 Características Técnicas
-- **Estructura Modular:** Organización de componentes pensada para la escalabilidad.
-- **Alto Rendimiento:** Tiempos de carga optimizados mediante la configuración eficiente de Vite.
-- **Enfoque SEO:** Etiquetas y estructura semántica orientada al marketing digital.
+| Área | Tecnología | Por qué |
+|------|-----------|---------|
+| **Core** | React 18 + Vite | HMR ultrarrápido, builds optimizados |
+| **Routing** | React Router DOM | SPA fluida sin recargas |
+| **Estilos** | CSS Modules + Tailwind | Escalabilidad + utilidades |
+| **Deployment** | Vercel | CI/CD automático, preview branches |
+| **SEO** | React Helmet + meta tags | Optimizado para marketing |
 
-## 📂 Estructura del Repositorio
-```text
-├── public/          # Assets estáticos y logos
-├── src/
-│   ├── components/  # Bloques de construcción de la UI
-│   ├── assets/      # Recursos visuales
-│   └── App.jsx      # Lógica principal y ruteo
-└── package.json     # Scripts y dependencias
+## 📁 Estructura de Componentes

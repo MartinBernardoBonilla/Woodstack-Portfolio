@@ -83,5 +83,8 @@ Martín Bernardo Bonilla — Fullstack Developer
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/MartinBernardoBonilla)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:martinbernardobonilla@gmail.com)
 
-📄 Licencia
-MIT © 2026 Woodstack Inc.
+## 📄 Licencia
+
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+MIT © 2026 Martín Bernardo Bonilla

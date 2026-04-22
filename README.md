@@ -23,3 +23,37 @@ Este portfolio no es solo "mi página personal" — es un caso de estudio en sí
 | **SEO** | React Helmet + meta tags | Optimizado para marketing |
 
 ## 📁 Estructura de Componentes
+
+src/
+├── components/
+│ ├── layout/ # Header, Footer, Container
+│ ├── sections/ # Hero, Services, Projects, Contact
+│ ├── ui/ # Button, Card, Badge (reutilizables)
+│ └── animations/ # Framer Motion wrappers
+├── hooks/ # useScrollPosition, useWindowSize
+├── utils/ # constants, helpers, formatters
+└── assets/ # optimized images (WebP)
+
+text
+
+## ⚡ Performance (Lighthouse)
+
+| Métrica | Score |
+|---------|-------|
+| Performance | 96+ |
+| Accessibility | 100 |
+| Best Practices | 100 |
+| SEO | 98 |
+
+## 🔄 Próximas features
+- [ ] Modo oscuro/claro
+- [ ] Blog integrado (para marketing de contenido)
+- [ ] Formulario de contacto con email.js
+
+## 🧪 Cómo ejecutar localmente
+
+```bash
+git clone https://github.com/MartinBernardoBonilla/woodstack-portfolio
+cd woodstack-portfolio
+npm install
+npm run dev  # Abre http://localhost:5173

@@ -4,13 +4,23 @@
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
 
-## 🎯 ¿Por qué existe WoodStack?
+---
 
-WoodStack nace como **la vitrina estratégica** que demuestra mi capacidad para unir:
+## 🌐 Demo en vivo
+
+**👉 [woodstack-portfolio.vercel.app](https://woodstack-portfolio.vercel.app)** 👈
+
+---
+
+## 🏢 Woodstack Portfolio
+
+Landing page de **Woodstack Inc.** — agencia de desarrollo fullstack especializada en **e-commerce para el mercado latinoamericano**.
+
+Este portfolio es la vitrina estratégica que demuestra mi capacidad para unir:
 - **Branding y marketing digital** (copy, diseño, conversión)
 - **Desarrollo web moderno** (rendimiento, SEO, arquitectura)
 
-Este portfolio no es solo "mi página personal" — es un caso de estudio en sí mismo sobre cómo comunicar solidez técnica y profesionalismo.
+---
 
 ## 🛠️ Stack Técnico Detallado
 
@@ -22,8 +32,9 @@ Este portfolio no es solo "mi página personal" — es un caso de estudio en sí
 | **Deployment** | Vercel | CI/CD automático, preview branches |
 | **SEO** | React Helmet + meta tags | Optimizado para marketing |
 
-## 📁 Estructura de Componentes
+---
 
+## 📁 Estructura de Componentes
 src/
 ├── components/
 │ ├── layout/ # Header, Footer, Container
@@ -36,6 +47,8 @@ src/
 
 text
 
+---
+
 ## ⚡ Performance (Lighthouse)
 
 | Métrica | Score |
@@ -45,10 +58,14 @@ text
 | Best Practices | 100 |
 | SEO | 98 |
 
+---
+
 ## 🔄 Próximas features
 - [ ] Modo oscuro/claro
 - [ ] Blog integrado (para marketing de contenido)
 - [ ] Formulario de contacto con email.js
+
+---
 
 ## 🧪 Cómo ejecutar localmente
 
@@ -57,3 +74,12 @@ git clone https://github.com/MartinBernardoBonilla/woodstack-portfolio
 cd woodstack-portfolio
 npm install
 npm run dev  # Abre http://localhost:5173
+👤 Autor
+Martín Bernardo Bonilla — Fullstack Developer
+
+https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white
+https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white
+https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white
+
+📄 Licencia
+MIT © 2026 Woodstack Inc.

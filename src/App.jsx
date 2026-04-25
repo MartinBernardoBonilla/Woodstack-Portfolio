@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Download, Check, ArrowRight, Sparkles, Rocket, TrendingUp, Shield, Database, Cpu, Mail, Phone, Calendar, MessageCircle } from 'lucide-react';
+import { Menu, X, Code, Download, Check, ArrowRight, Sparkles, Rocket, TrendingUp, Shield, Database, Cpu, Mail, Phone, Calendar, MessageCircle, ExternalLink } from 'lucide-react';
+
+const BIYE_URL = 'https://biye-app.vercel.app/';
 
 export default function WoodstackPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -178,13 +180,16 @@ export default function WoodstackPortfolio() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <button 
-                onClick={() => scrollToSection('biye')}
+              {/* CAMBIO: botón "Ver Proyecto" ahora abre Biye en nueva pestaña */}
+              <a
+                href={BIYE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
               >
                 <span>Ver Proyecto</span>
-                <ArrowRight size={20} />
-              </button>
+                <ExternalLink size={20} />
+              </a>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-slate-800 hover:bg-slate-700 border border-slate-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
@@ -281,27 +286,47 @@ export default function WoodstackPortfolio() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-900/20 to-cyan-900/20 border border-slate-800 rounded-3xl p-12 mb-16 backdrop-blur-sm">
-            <div className="bg-slate-900 rounded-2xl p-8 border border-slate-700">
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              </div>
-              <div className="space-y-4">
-                <div className="h-4 bg-slate-700 rounded w-3/4"></div>
-                <div className="h-4 bg-slate-700 rounded w-1/2"></div>
-                <div className="h-32 bg-gradient-to-br from-purple-600/20 to-cyan-600/20 rounded-lg border border-slate-700 flex items-center justify-center">
-                  <Cpu size={64} className="text-purple-400/50" />
+          {/* CAMBIO: el mock ahora es un enlace clicable a Biye */}
+          <a
+            href={BIYE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group mb-16"
+          >
+            <div className="bg-gradient-to-br from-purple-900/20 to-cyan-900/20 border border-slate-800 group-hover:border-cyan-500/50 rounded-3xl p-12 backdrop-blur-sm transition-all duration-300">
+              <div className="bg-slate-900 rounded-2xl p-8 border border-slate-700 group-hover:border-cyan-500/30 transition-all duration-300">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  {/* URL bar */}
+                  <div className="flex-1 mx-4 bg-slate-800 rounded-md px-4 py-1.5 text-xs text-slate-400 font-mono flex items-center space-x-2 border border-slate-700">
+                    <span className="text-green-400">🔒</span>
+                    <span>biye-app.vercel.app</span>
+                  </div>
+                  <ExternalLink size={16} className="text-slate-500 group-hover:text-cyan-400 transition-colors" />
                 </div>
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="h-20 bg-slate-700 rounded"></div>
-                  <div className="h-20 bg-slate-700 rounded"></div>
-                  <div className="h-20 bg-slate-700 rounded"></div>
+                <div className="space-y-4">
+                  <div className="h-4 bg-slate-700 rounded w-3/4"></div>
+                  <div className="h-4 bg-slate-700 rounded w-1/2"></div>
+                  <div className="h-32 bg-gradient-to-br from-purple-600/20 to-cyan-600/20 rounded-lg border border-slate-700 flex items-center justify-center">
+                    <Cpu size={64} className="text-purple-400/50" />
+                  </div>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="h-20 bg-slate-700 rounded"></div>
+                    <div className="h-20 bg-slate-700 rounded"></div>
+                    <div className="h-20 bg-slate-700 rounded"></div>
+                  </div>
                 </div>
               </div>
+              <p className="text-center text-slate-400 text-sm mt-4 group-hover:text-cyan-400 transition-colors flex items-center justify-center space-x-2">
+                <ExternalLink size={14} />
+                <span>Clic para visitar Biye en vivo</span>
+              </p>
             </div>
-          </div>
+          </a>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="bg-slate-900 border border-red-500/20 rounded-2xl p-8">
@@ -410,6 +435,16 @@ export default function WoodstackPortfolio() {
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-6">¿Querés una plataforma así para tu negocio?</h3>
             <div className="flex flex-wrap justify-center gap-4">
+              {/* CAMBIO: botón "Visitar Biye" directo al sitio */}
+              <a
+                href={BIYE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
+              >
+                <span>Visitar Biye</span>
+                <ExternalLink size={20} />
+              </a>
               <button 
                 onClick={() => scrollToSection('pricing')}
                 className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
@@ -635,6 +670,18 @@ export default function WoodstackPortfolio() {
                   <button onClick={() => scrollToSection('biye')} className="hover:text-purple-400 transition-colors">
                     Proyecto
                   </button>
+                </li>
+                <li>
+                  {/* CAMBIO: enlace directo a Biye en el footer */}
+                  <a
+                    href={BIYE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-400 transition-colors flex items-center space-x-1"
+                  >
+                    <span>Biye (en vivo)</span>
+                    <ExternalLink size={12} />
+                  </a>
                 </li>
                 <li>
                   <button onClick={() => scrollToSection('pricing')} className="hover:text-purple-400 transition-colors">

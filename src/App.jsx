@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code, Download, Check, ArrowRight, Sparkles, Rocket, TrendingUp, Shield, Database, Cpu, Mail, Phone, Calendar, MessageCircle, ExternalLink } from 'lucide-react';
 
-const BIYE_URL = 'https://biye-app.vercel.app/';
+const BIYE_URL = 'https://biye-app.vercel.app';
 
 export default function WoodstackPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

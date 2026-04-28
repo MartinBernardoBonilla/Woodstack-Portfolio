@@ -715,7 +715,7 @@ export default function WoodstackPortfolio() {
           </div>
           
           <div className="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
-            <p>© 2025 Woodstack Inc. Todos los derechos reservados.</p>
+            <p>© 2026 Woodstack Inc. Todos los derechos reservados.</p>
             <p className="mt-2">Hecho con ❤️ en Argentina para el mundo</p>
           </div>
         </div>

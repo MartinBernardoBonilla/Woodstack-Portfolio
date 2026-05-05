@@ -575,7 +575,7 @@ export default function WoodstackPortfolio() {
                 desc: 'Información completa',
                 action: 'Descargar',
                 color: 'from-cyan-500 to-blue-500',
-                url: '/Martin_Bonilla_CV_2026.pdf',
+                url: '/Martin_Bonilla_CV_2026_FINAL.pdf',
                 external: false
               },
               {

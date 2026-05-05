@@ -124,7 +124,7 @@ export default function WoodstackPortfolio() {
                 </button>
               ))}
               <a 
-                href="https://www.linkedin.com/in/martin-undefined-b97604241/" 
+                href="https://www.linkedin.com/in/martinbernardobonilla/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 px-6 py-2 rounded-lg font-semibold transition-all duration-300"
@@ -180,7 +180,6 @@ export default function WoodstackPortfolio() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              {/* CAMBIO: botón "Ver Proyecto" ahora abre Biye en nueva pestaña */}
               <a
                 href={BIYE_URL}
                 target="_blank"
@@ -286,7 +285,6 @@ export default function WoodstackPortfolio() {
             </p>
           </div>
 
-          {/* CAMBIO: el mock ahora es un enlace clicable a Biye */}
           <a
             href={BIYE_URL}
             target="_blank"
@@ -301,7 +299,6 @@ export default function WoodstackPortfolio() {
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
-                  {/* URL bar */}
                   <div className="flex-1 mx-4 bg-slate-800 rounded-md px-4 py-1.5 text-xs text-slate-400 font-mono flex items-center space-x-2 border border-slate-700">
                     <span className="text-green-400">🔒</span>
                     <span>biye-app.vercel.app</span>
@@ -435,7 +432,6 @@ export default function WoodstackPortfolio() {
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-6">¿Querés una plataforma así para tu negocio?</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              {/* CAMBIO: botón "Visitar Biye" directo al sitio */}
               <a
                 href={BIYE_URL}
                 target="_blank"
@@ -569,36 +565,62 @@ export default function WoodstackPortfolio() {
                 title: 'Agendar Reunión',
                 desc: 'Hablemos de tu proyecto',
                 action: 'Agendar',
-                color: 'from-purple-500 to-pink-500'
+                color: 'from-purple-500 to-pink-500',
+                url: 'https://calendly.com/martinbernardobonilla/30min',
+                external: true
               },
               {
                 icon: Download,
                 title: 'Descargar PDF',
                 desc: 'Información completa',
                 action: 'Descargar',
-                color: 'from-cyan-500 to-blue-500'
+                color: 'from-cyan-500 to-blue-500',
+                url: '/Martin_Bonilla_CV_2026.pdf',
+                external: false
               },
               {
                 icon: Mail,
                 title: 'Formulario',
                 desc: 'Escribinos tu consulta',
                 action: 'Completar',
-                color: 'from-green-500 to-emerald-500'
+                color: 'from-green-500 to-emerald-500',
+                url: null,
+                external: false
               },
               {
                 icon: MessageCircle,
                 title: 'WhatsApp',
                 desc: 'Chateá con nosotros',
                 action: 'Enviar',
-                color: 'from-yellow-500 to-orange-500'
+                color: 'from-yellow-500 to-orange-500',
+                url: 'https://wa.me/5493446564336?text=Hola%20Woodstack%20estoy%20interesado%20en%20sus%20servicios',
+                external: true
               }
             ].map((contact, i) => {
               const IconComponent = contact.icon;
-              return (
-                <div 
+              return contact.url ? (
+                <a
                   key={i}
+                  href={contact.url}
+                  target={contact.external ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                  className="group bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 block"
+                >
+                  <div className={`w-14 h-14 bg-gradient-to-br ${contact.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <IconComponent className="text-white" size={28} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{contact.title}</h3>
+                  <p className="text-slate-400 text-sm mb-4">{contact.desc}</p>
+                  <div className="text-purple-400 font-semibold text-sm flex items-center space-x-1">
+                    <span>{contact.action}</span>
+                    <ArrowRight size={16} />
+                  </div>
+                </a>
+              ) : (
+                <div
+                  key={i}
+                  onClick={() => setShowContactForm(true)}
                   className="group bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 cursor-pointer"
-                  onClick={() => i === 2 && setShowContactForm(true)}
                 >
                   <div className={`w-14 h-14 bg-gradient-to-br ${contact.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <IconComponent className="text-white" size={28} />
@@ -629,7 +651,7 @@ export default function WoodstackPortfolio() {
                 <span>contact@woodstack.dev</span>
               </a>
               <a 
-                href="https://www.linkedin.com/in/martin-undefined-b97604241/" 
+                href="https://www.linkedin.com/in/martinbernardobonilla/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-slate-300 hover:text-purple-400 transition-colors"
@@ -672,7 +694,6 @@ export default function WoodstackPortfolio() {
                   </button>
                 </li>
                 <li>
-                  {/* CAMBIO: enlace directo a Biye en el footer */}
                   <a
                     href={BIYE_URL}
                     target="_blank"
@@ -703,7 +724,7 @@ export default function WoodstackPortfolio() {
                 Developer Full-Stack con 3 años de experiencia en el desarrollo de soluciones web escalables
               </p>
               <a 
-                href="https://www.linkedin.com/in/martin-undefined-b97604241/" 
+                href="https://www.linkedin.com/in/martinbernardobonilla/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-400 hover:text-purple-300 text-sm flex items-center space-x-1"
